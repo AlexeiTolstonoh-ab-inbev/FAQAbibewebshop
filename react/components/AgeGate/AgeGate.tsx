@@ -8,14 +8,16 @@ const AgeGate = () => {
 	const [day, setDay] = useState(`0`)
 	const [mounth, setMounth] = useState(`0`)
 	const [year, setYear] = useState(`0`)
-
+	const [isRemember, setRemember] = useState(false)
 	const [isAccess, setAccess] = useState(true)
-
 	const handleClick = () => {
-		debugger
-		let expiresDate = new Date()
-		expiresDate.setDate(expiresDate.getDate() + 60)
-		setCookie('ageGate', true, { expires: expiresDate })
+		if(isRemember) {
+			let expiresDate = new Date()
+			expiresDate.setDate(expiresDate.getDate() + 60)
+			setCookie('ageGate', true, {expires: expiresDate})
+		} else {
+			setCookie('ageGate', true)
+		}
 	}
 	const onClickConfirm = () => {
 		const msIn18Years = 568025136000
@@ -27,7 +29,6 @@ const AgeGate = () => {
 		} else if(isLegal){
 			handleClick()
 		}
-
 	}
 
 	useEffect(() => {
@@ -54,12 +55,15 @@ const AgeGate = () => {
 							<input className={styles.dataInput} onChange={e => setMounth(e.target.value)} min={1} max={12} type="number" name="agegate-m" maxLength={2} placeholder="mm" tabIndex={0}></input>
 							<input className={styles.dataInput} onChange={e => setYear(e.target.value)} min={0} type="number" name="agegate-y" maxLength={4} placeholder="yyyy" tabIndex={0}></input>
 						</div>
+							<label>Remember me*
+								<input id="remember" type="checkbox" onChange={()=> setRemember(!isRemember)}></input>
+							</label>
 							 <button className={styles.ageGateButton} onClick={onClickConfirm}>
 								CONTINUE
 						</button>
 						</div> : <div><p>Sorry, you must be 18 years or older to visit this website</p></div>}
 						<div className={styles.textContainer}>
-							<p className={styles.descriptionBottomText}>© 2021 InBev UK Limited T/A Budweiser Brewing Group UK&I</p>
+							<p className={styles.descriptionBottomText}>© 2021 AB InBev UK Limited T/A Budweiser Brewing Group UK&I</p>
 							<p className={styles.descriptionBottomText}>For the facts <a href='https://www.drinkaware.co.uk/'>drinkaware.co.uk</a></p>
 							<p className={styles.descriptionBottomText}>Please do not share content of this site with anyone underage</p>
 						</div>
