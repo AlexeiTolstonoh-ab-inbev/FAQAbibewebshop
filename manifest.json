@@ -1,9 +1,9 @@
 {
-  "vendor": "abiukb2b",
-  "name": "age-gate",
-  "version": "0.0.3",
+  "vendor": "abibewebshop",
+  "name": "faq-abibewebshop",
+  "version": "0.0.1",
   "title": "age-gate",
-  "description": "AgeGate Component",
+  "description": "FAQ Component",
   "defaultLocale": "pt-BR",
   "builders": {
     "messages": "1.x",
