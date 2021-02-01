@@ -7,26 +7,26 @@ const Faq: StorefrontFunctionComponent<FaqProps> = () => {
 		<div>
 			<div className={styles.faqWrapper}>
 
-			<div className={styles.faqContainer}>
-				<h3 className={styles.faqContainerHeader}>Order & Receive</h3>
-				<input className={styles.hide} id="hd-1" type="checkbox"></input>
-				<label className={styles.categoryHeader} htmlFor="hd-1">When do I receive my order?</label>
-				<div>
+				<div className={styles.faqContainer}>
+					<h3 className={styles.faqContainerHeader}>Order & Receive</h3>
+					<input className={styles.hide} id="hd-1" type="checkbox"></input>
+					<label className={styles.categoryHeader} htmlFor="hd-1">When do I receive my order?</label>
+					<div>
 						HTML — стандартный язык разметки документов во Всемирной паутине. Большинство веб-страниц
 						содержат описание разметки на языке HTML (или XHTML). Язык HTML интерпретируется браузерами и
 						отображается в виде документа в удобной для человека форме..
 					</div>
 					<br/>
 					<br/>
-				<input className={styles.hide} id="hd-2" type="checkbox"></input>
-						<label className={styles.categoryHeader} htmlFor="hd-2">What should I do when the product is out of stock?</label>
-						<div>
-							CSS - CSS Cascading Style Sheets — каскадные таблицы стилей — формальный язык описания
-							внешнего вида документа, написанного с использованием языка разметки. Преимущественно
-							используется как средство описания, оформления внешнего вида веб-страниц, написанных с
-							помощью языков разметки HTML и XHTML, но может также применяться к любым XML-документам,
-							например, к SVG или XUL.
-						</div>
+					<input className={styles.hide} id="hd-2" type="checkbox"></input>
+					<label className={styles.categoryHeader} htmlFor="hd-2">What should I do when the product is out of stock?</label>
+					<div>
+						CSS - CSS Cascading Style Sheets — каскадные таблицы стилей — формальный язык описания
+						внешнего вида документа, написанного с использованием языка разметки. Преимущественно
+						используется как средство описания, оформления внешнего вида веб-страниц, написанных с
+						помощью языков разметки HTML и XHTML, но может также применяться к любым XML-документам,
+						например, к SVG или XUL.
+					</div>
 				</div>
 
 				<div className={styles.faqContainer}>
