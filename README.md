@@ -1,2 +1,1 @@
-# AgeGate
-AgeGate v-tex app
+FAQ app
