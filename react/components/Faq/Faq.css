@@ -74,8 +74,6 @@
 .hide + label:before {
 	color: #FFC600;
 	content: "\27A4";
-	display: block;
-	float: right;
 	font-size: 23px;
 	font-weight: bold;
 	height: 16px;
@@ -88,6 +86,7 @@
 	border-radius: 50%;
 	position: absolute;
 	right: 0;
+	top: 25%;
 }
 .hide:checked + label:before {
 	content: "\27A4";
