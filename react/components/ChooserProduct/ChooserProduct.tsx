@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 
 
-const Faq = () => {
+const ChooserProduct = () => {
 	// const [brandOpt, setBrandOpt] = useState('/jupiler')
 	const [packType, setPackType] = useState('/pack-type/cans')
 	const [departamentName, setDepartamentName] = useState('/beer')
@@ -79,7 +79,7 @@ debugger
 	)
 }
 
-export default Faq
+export default ChooserProduct
 //`/beer/bottles/jupiler/pack-type?fuzzy=0&initialMap=c,c,c&initialQuery=beer/pack-type/bottles&map=category-1,category-3,brand,category-2&operator=and`
 //`/beer/bottles/pack-type/stella-artois?fuzzy=0&initialMap=c,c,c&initialQuery=beer/pack-type/bottles&map=category-1,category-3,category-2,brand&operator=and`
 //`/beer/bottles/pack-type/victoria?fuzzy=0&initialMap=c,c,c&initialQuery=beer/pack-type/bottles&map=category-1,category-3,category-2,brand&operator=and`

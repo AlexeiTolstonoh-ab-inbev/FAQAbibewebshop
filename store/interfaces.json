@@ -1,6 +1,6 @@
 {
-  "Faq": {
-    "component": "Faq",
+  "ChooserProduct": {
+    "component": "ChooserProduct",
     "allowed": ["rich-text"]
   }
 }
